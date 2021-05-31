@@ -1,4 +1,4 @@
-# JKS (Java KeyStore)
+# JKS (Java Key Store)
 When you are working with JAVA applications and JAVA based server, you may need to configure a **Java key store (JKS)** file. 
 **In Salesforce** certificates are used to authenticate single sign-on with an external website.
 
@@ -42,4 +42,8 @@ e.g:
 ```
 keytool -changealias -keystore wso2carbon.jks -alias "1"
 ```
+
+## Screenshots:
+![To create .P12](https://raw.githubusercontent.com/shivamkapasia0/JKS-Salesforce/main/JKS%20SS/createP12.png)
+![to create JKS](https://raw.githubusercontent.com/shivamkapasia0/JKS-Salesforce/main/JKS%20SS/createJKS.png)
 **Thanks for reading …!!! Also you can find more details on creating self signed KeyStore from**  **[here](http://www.javasecurity.org/2015/09/how-to-create-self-signed-keystore-jks.html)**
