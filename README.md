@@ -46,4 +46,24 @@ keytool -changealias -keystore wso2carbon.jks -alias "1"
 ## Screenshots:
 ![To create .P12](https://raw.githubusercontent.com/shivamkapasia0/JKS-Salesforce/main/JKS%20SS/createP12.png)
 ![to create JKS](https://raw.githubusercontent.com/shivamkapasia0/JKS-Salesforce/main/JKS%20SS/createJKS.png)
+
+## Errors:
+**you can face error while importing certificate from keystore error like**:
+
+    Data Not Available
+> The data you were trying to access could not be found. It may be due
+> to another user deleting the data or a system error. If you know the
+> data is not deleted but cannot access it, please look at our  support 
+> page.
+
+**To Solve this error, follow below steps:**
+
+ - Go To Setup | Identity Provider
+ - Press “Enable Identity Provider” button
+Once Identity Provider is enabled in the Org, it will create a self-signed certificate in your Org under — Setup | Certificate and Key Management
+ - Try to import the certificate from your JKS through “Import from
+   keystore” option and it should be successful.
+
 **Thanks for reading …!!! Also you can find more details on creating self signed KeyStore from**  **[here](http://www.javasecurity.org/2015/09/how-to-create-self-signed-keystore-jks.html)**
+
+
